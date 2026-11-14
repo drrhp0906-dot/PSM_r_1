@@ -8,13 +8,10 @@ export type ViewKey = 'home' | 'notes' | 'mcq' | 'saq' | 'progress'
 interface AppState {
   view: ViewKey
   setView: (v: ViewKey) => void
-  /** topic pre-selected when switching to notes */
   notesTopicId: string | null
   openTopic: (topicId: string) => void
-  /** topics marked as read (persisted locally) */
   readTopics: Record<string, true>
   toggleRead: (topicId: string) => void
-  /** pre-selected scope for the MCQ runner, e.g. chapterId or 'all' */
   mcqScope: string
   setMcqScope: (s: string) => void
 }

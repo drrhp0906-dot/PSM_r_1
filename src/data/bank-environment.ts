@@ -1,11 +1,7 @@
-// Chapter 2: Environment - Question bank (PSM Study Hub)
-// Sources: K Park Textbook of PSM (27th ed.), IAPSM Textbook of Community Medicine (3rd ed.),
-// BIS IS 10500:2012, CPCB, WHO guidelines, Bio-Medical Waste Management Rules 2016.
 
 import type { Mcq, Saq } from './types'
 
 export const mcqsEnvironment: Mcq[] = [
-  // ---------------- WATER (10) ----------------
   {
     id: 'e2-water-m01',
     topicId: 'water',
@@ -152,7 +148,6 @@ export const mcqsEnvironment: Mcq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- AIR (9) ----------------
   {
     id: 'e2-air-m01',
     topicId: 'air',
@@ -269,7 +264,6 @@ export const mcqsEnvironment: Mcq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- NOISE (7) ----------------
   {
     id: 'e2-noise-m01',
     topicId: 'noise',
@@ -351,7 +345,6 @@ export const mcqsEnvironment: Mcq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- RADIATION (8) ----------------
   {
     id: 'e2-radiation-m01',
     topicId: 'radiation',
@@ -438,7 +431,6 @@ export const mcqsEnvironment: Mcq[] = [
     ref: 'WHO',
   },
 
-  // ---------------- WASTE (8) ----------------
   {
     id: 'e2-waste-m01',
     topicId: 'waste',
@@ -562,7 +554,6 @@ export const mcqsEnvironment: Mcq[] = [
 ]
 
 export const saqsEnvironment: Saq[] = [
-  // ---------------- WATER (4) ----------------
   {
     id: 'e2-water-s01',
     topicId: 'water',
@@ -612,7 +603,6 @@ export const saqsEnvironment: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- AIR (3) ----------------
   {
     id: 'e2-air-s01',
     topicId: 'air',
@@ -648,7 +638,6 @@ export const saqsEnvironment: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- NOISE (3) ----------------
   {
     id: 'e2-noise-s01',
     topicId: 'noise',
@@ -686,7 +675,6 @@ export const saqsEnvironment: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- RADIATION (3) ----------------
   {
     id: 'e2-radiation-s01',
     topicId: 'radiation',
@@ -723,7 +711,6 @@ export const saqsEnvironment: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- WASTE (3) ----------------
   {
     id: 'e2-waste-s01',
     topicId: 'waste',

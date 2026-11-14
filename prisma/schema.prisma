@@ -1,5 +1,3 @@
-// Prisma schema — PSM Study Hub
-// Progress tracking for MCQ practice and 2-mark question revision.
 
 generator client {
   provider = "prisma-client-js"
@@ -10,7 +8,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-/// One row per MCQ answer submitted by the student
 model McqAttempt {
   id        String   @id @default(cuid())
   mcqId     String
@@ -22,7 +19,6 @@ model McqAttempt {
   @@index([createdAt])
 }
 
-/// Latest revision state of each 2-mark question
 model SaqRevision {
   id        String   @id @default(cuid())
   saqId     String   @unique

@@ -3,10 +3,6 @@ import { db } from '@/lib/db'
 
 export const dynamic = 'force-dynamic'
 
-/**
- * GET /api/progress
- * Returns every MCQ attempt and the revision state of each 2-mark question.
- */
 export async function GET() {
   try {
     const [attempts, saqs] = await Promise.all([
@@ -25,7 +21,6 @@ export async function GET() {
   }
 }
 
-/** DELETE /api/progress — reset all study progress */
 export async function DELETE() {
   try {
     await Promise.all([db.mcqAttempt.deleteMany(), db.saqRevision.deleteMany()])

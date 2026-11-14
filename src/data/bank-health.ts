@@ -1,9 +1,6 @@
-// Chapter 1: Concept of Health and Disease — Question bank
-// Sources: K Park Textbook of PSM (27th ed.), IAPSM Textbook of Community Medicine (3rd ed.), WHO.
 import type { Mcq, Saq } from './types'
 
 export const mcqsHealth: Mcq[] = [
-  // ---------------- health-wellbeing (6) ----------------
   {
     id: 'h1-health-wellbeing-m01',
     topicId: 'health-wellbeing',
@@ -81,7 +78,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- dimensions (6) ----------------
   {
     id: 'h1-dimensions-m01',
     topicId: 'dimensions',
@@ -153,7 +149,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- spectrum (6) ----------------
   {
     id: 'h1-spectrum-m01',
     topicId: 'spectrum',
@@ -236,7 +231,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'IAPSM 3e',
   },
 
-  // ---------------- determinants (5) ----------------
   {
     id: 'h1-determinants-m01',
     topicId: 'determinants',
@@ -294,7 +288,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- indicators (7) ----------------
   {
     id: 'h1-indicators-m01',
     topicId: 'indicators',
@@ -376,7 +369,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'WHO',
   },
 
-  // ---------------- causation (7) ----------------
   {
     id: 'h1-causation-m01',
     topicId: 'causation',
@@ -475,7 +467,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- natural-history (6) ----------------
   {
     id: 'h1-natural-history-m01',
     topicId: 'natural-history',
@@ -554,7 +545,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'IAPSM 3e',
   },
 
-  // ---------------- control (5) ----------------
   {
     id: 'h1-control-m01',
     topicId: 'control',
@@ -612,7 +602,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- prevention (7) ----------------
   {
     id: 'h1-prevention-m01',
     topicId: 'prevention',
@@ -699,7 +688,6 @@ export const mcqsHealth: Mcq[] = [
     ref: 'IAPSM 3e',
   },
 
-  // ---------------- intervention (7) ----------------
   {
     id: 'h1-intervention-m01',
     topicId: 'intervention',
@@ -786,7 +774,6 @@ export const mcqsHealth: Mcq[] = [
 ]
 
 export const saqsHealth: Saq[] = [
-  // ---------------- health-wellbeing (2) ----------------
   {
     id: 'h1-health-wellbeing-s01',
     topicId: 'health-wellbeing',
@@ -810,7 +797,6 @@ export const saqsHealth: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- dimensions (2) ----------------
   {
     id: 'h1-dimensions-s01',
     topicId: 'dimensions',
@@ -833,7 +819,6 @@ export const saqsHealth: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- spectrum (2) ----------------
   {
     id: 'h1-spectrum-s01',
     topicId: 'spectrum',
@@ -857,7 +842,6 @@ export const saqsHealth: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- determinants (2) ----------------
   {
     id: 'h1-determinants-s01',
     topicId: 'determinants',
@@ -882,7 +866,6 @@ export const saqsHealth: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- indicators (3) ----------------
   {
     id: 'h1-indicators-s01',
     topicId: 'indicators',
@@ -915,7 +898,6 @@ export const saqsHealth: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- causation (2) ----------------
   {
     id: 'h1-causation-s01',
     topicId: 'causation',
@@ -939,7 +921,6 @@ export const saqsHealth: Saq[] = [
     ref: 'IAPSM 3e',
   },
 
-  // ---------------- natural-history (2) ----------------
   {
     id: 'h1-natural-history-s01',
     topicId: 'natural-history',
@@ -962,7 +943,6 @@ export const saqsHealth: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- control (2) ----------------
   {
     id: 'h1-control-s01',
     topicId: 'control',
@@ -986,7 +966,6 @@ export const saqsHealth: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- prevention (3) ----------------
   {
     id: 'h1-prevention-s01',
     topicId: 'prevention',
@@ -1021,7 +1000,6 @@ export const saqsHealth: Saq[] = [
     ref: 'K Park 27e',
   },
 
-  // ---------------- intervention (2) ----------------
   {
     id: 'h1-intervention-s01',
     topicId: 'intervention',

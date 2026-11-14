@@ -70,7 +70,7 @@ export function NotesView() {
       </div>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-[280px_1fr]">
-        {/* Topic list */}
+
         <aside
           aria-label="Topic list"
           className="nice-scroll max-h-64 overflow-y-auto rounded-xl border bg-card p-2 lg:max-h-[calc(100vh-13rem)] lg:sticky lg:top-20"
@@ -115,7 +115,7 @@ export function NotesView() {
           )}
         </aside>
 
-        {/* Topic content */}
+
         <AnimatePresence mode="wait">
           <motion.div
             key={active.id}
@@ -146,7 +146,7 @@ export function NotesView() {
 
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{active.intro}</p>
 
-                {/* High yield chips */}
+
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {active.highYield.map((h) => (
                     <Badge
@@ -160,7 +160,7 @@ export function NotesView() {
                   ))}
                 </div>
 
-                {/* Sections */}
+
                 <div className="mt-6 space-y-6">
                   {active.sections.map((sec) => (
                     <section key={sec.heading} aria-label={sec.heading}>
@@ -225,7 +225,7 @@ export function NotesView() {
                   Reference: {active.ref}
                 </p>
 
-                {/* Prev / Next */}
+
                 <div className="mt-4 flex items-center justify-between gap-2">
                   {prev ? (
                     <Button variant="outline" size="sm" onClick={() => useAppStore.getState().openTopic(prev.id)} className="min-h-10">

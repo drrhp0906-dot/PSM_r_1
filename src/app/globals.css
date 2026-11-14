@@ -121,7 +121,6 @@
   }
 }
 
-/* Custom scrollbar for long lists */
 .nice-scroll {
   scrollbar-width: thin;
   scrollbar-color: oklch(0.596 0.145 163.225 / 0.35) transparent;

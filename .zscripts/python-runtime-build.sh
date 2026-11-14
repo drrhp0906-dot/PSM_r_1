@@ -52,8 +52,6 @@ install_requirements() {
         --target "$target_dir" \
         --requirements "$requirements_file"
 
-    # --target 生成的 console scripts 会保留构建机 Python 的绝对 shebang。
-    # 改成 Runner 内可解析的 python，并由 start scripts 将该 bin 目录加入 PATH。
     if [ -d "$target_dir/bin" ]; then
         for script in "$target_dir"/bin/*; do
             [ -f "$script" ] || continue

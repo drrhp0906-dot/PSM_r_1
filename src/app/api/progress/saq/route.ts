@@ -4,10 +4,6 @@ import { saqById } from '@/data'
 
 export const dynamic = 'force-dynamic'
 
-/**
- * POST /api/progress/saq
- * Upserts revision state of a 2-mark question: { saqId, revised }
- */
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json().catch(() => null)

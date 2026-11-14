@@ -1,6 +1,3 @@
-// Chapter 2: Environment — Study notes
-// Authored from K Park Textbook of PSM (27th ed.), IAPSM 3e, BIS IS 10500:2012,
-// CPCB NAAQS/AQI, WHO guidelines, BMW Management Rules 2016.
 import type { Topic } from './types'
 
 export const notesEnvironment: Topic[] = [

@@ -68,7 +68,6 @@ export function ProgressView() {
     for (const s of data?.saqs ?? []) days.add(s.updatedAt.slice(0, 10))
     let streak = 0
     const d = new Date()
-    // allow "today not yet studied" — start from yesterday in that case
     const today = d.toISOString().slice(0, 10)
     if (!days.has(today)) d.setDate(d.getDate() - 1)
     for (;;) {
@@ -123,7 +122,7 @@ export function ProgressView() {
         </div>
       ) : (
         <>
-          {/* Top stats */}
+
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
             <StatTile
               icon={<Target className="h-4 w-4" aria-hidden />}
@@ -147,7 +146,7 @@ export function ProgressView() {
             />
           </div>
 
-          {/* Per chapter */}
+
           <h2 className="mb-3 mt-8 text-lg font-semibold">Accuracy by chapter</h2>
           <div className="grid gap-3 sm:grid-cols-2">
             {perChapter.map(({ ch, accuracy, attempted, correct }) => (
@@ -176,7 +175,7 @@ export function ProgressView() {
             ))}
           </div>
 
-          {/* Per topic table */}
+
           <h2 className="mb-3 mt-8 text-lg font-semibold">Topic-wise breakdown</h2>
           <Card>
             <CardContent className="p-0">
@@ -226,7 +225,7 @@ export function ProgressView() {
             </CardContent>
           </Card>
 
-          {/* Recent attempts */}
+
           <h2 className="mb-3 mt-8 text-lg font-semibold">Recent activity</h2>
           <Card>
             <CardContent className="p-0">
@@ -266,7 +265,7 @@ export function ProgressView() {
             </CardContent>
           </Card>
 
-          {/* Revised SAQs summary */}
+
           {Object.values(stats.saqRevised).some(Boolean) && (
             <>
               <h2 className="mb-3 mt-8 text-lg font-semibold">Revised 2-markers</h2>

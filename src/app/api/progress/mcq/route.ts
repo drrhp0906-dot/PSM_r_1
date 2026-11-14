@@ -4,10 +4,6 @@ import { mcqById } from '@/data'
 
 export const dynamic = 'force-dynamic'
 
-/**
- * POST /api/progress/mcq
- * Records one MCQ answer: { mcqId, selected (0-3), correct (boolean) }
- */
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json().catch(() => null)

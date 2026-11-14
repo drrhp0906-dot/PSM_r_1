@@ -55,7 +55,6 @@ export function McqView() {
   const [shuffleOptions, setShuffleOptions] = useState(true)
   const [onlyUnattempted, setOnlyUnattempted] = useState(false)
   const [questions, setQuestions] = useState<PreparedQuestion[]>([])
-  /** displayIndex chosen per question index */
   const [answers, setAnswers] = useState<Record<number, number>>({})
 
   const { data } = useProgress()
@@ -193,7 +192,6 @@ export function McqView() {
     )
   }
 
-  // result
   const correct = questions.filter((q, i) => answers[i] === q.correctDisplay).length
   return (
     <div className="mx-auto w-full max-w-2xl px-3 py-6 sm:px-4">
@@ -243,7 +241,6 @@ export function McqView() {
   )
 }
 
-/* ---------- Quiz runner ---------- */
 
 function QuizRunner({
   questions,
@@ -283,7 +280,7 @@ function QuizRunner({
 
   return (
     <div className="mx-auto w-full max-w-2xl px-3 py-6 sm:px-4">
-      {/* progress header */}
+
       <div className="mb-4 flex items-center gap-3">
         <Button variant="ghost" size="sm" onClick={onQuit} className="min-h-10 shrink-0">
           Quit
@@ -395,7 +392,7 @@ function QuizRunner({
         </motion.div>
       </AnimatePresence>
 
-      {/* running score */}
+
       <p className="mt-4 flex items-center justify-center gap-1.5 text-center text-xs text-muted-foreground">
         <Lightbulb className="h-3.5 w-3.5" aria-hidden /> Running score: {score}/{Object.keys(answers).length}
       </p>

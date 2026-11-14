@@ -1,4 +1,3 @@
-// Aggregates all PSM content for the app
 import { notesHealth } from './notes-health'
 import { notesEnvironment } from './notes-environment'
 import { mcqsHealth, saqsHealth } from './bank-health'
@@ -28,7 +27,6 @@ export const topics: Topic[] = [...notesHealth, ...notesEnvironment]
 export const allMcqs: Mcq[] = [...mcqsHealth, ...mcqsEnvironment]
 export const allSaqs: Saq[] = [...saqsHealth, ...saqsEnvironment]
 
-// ---------- helpers ----------
 export const topicsByChapter = (chapterId: string): Topic[] =>
   topics.filter((t) => t.chapterId === chapterId)
 
@@ -56,7 +54,6 @@ export const saqsForChapter = (chapterId: string): Saq[] => {
 export const mcqById = (id: string): Mcq | undefined => allMcqs.find((m) => m.id === id)
 export const saqById = (id: string): Saq | undefined => allSaqs.find((s) => s.id === id)
 
-/** Shuffle a copy of an array (Fisher-Yates) */
 export function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {

@@ -1,5 +1,3 @@
-// Chapter 1: Concept of Health and Disease — Study notes
-// Authored from K Park Textbook of PSM (27th ed.), IAPSM Textbook of Community Medicine (3rd ed.), WHO.
 import type { Topic } from './types'
 
 export const notesHealth: Topic[] = [

@@ -31,7 +31,6 @@ export function HomeView() {
 
   const readCount = topics.filter((t) => readTopics[t.id]).length
 
-  /** deterministic "pearl of the day" — no hydration mismatch */
   const pearl = useMemo(() => {
     const all = topics.flatMap((t) => t.highYield.map((h) => ({ topic: t.title, text: h })))
     const day = Math.floor(Date.now() / 86400000)
@@ -40,7 +39,7 @@ export function HomeView() {
 
   return (
     <div className="mx-auto w-full max-w-6xl px-3 py-6 sm:px-4 sm:py-8">
-      {/* Hero */}
+
       <motion.section
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
@@ -71,7 +70,7 @@ export function HomeView() {
         </div>
       </motion.section>
 
-      {/* Stats */}
+
       <section aria-label="Your study stats" className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
         {isLoading ? (
           <>
@@ -103,7 +102,7 @@ export function HomeView() {
         )}
       </section>
 
-      {/* Chapters */}
+
       <section aria-label="Syllabus" className="mt-8">
         <h2 className="mb-3 text-lg font-semibold tracking-tight">Syllabus</h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -181,7 +180,7 @@ export function HomeView() {
         </div>
       </section>
 
-      {/* Pearl of the day */}
+
       <Card className="mt-8 border-amber-300/60 bg-amber-50/60 dark:border-amber-500/30 dark:bg-amber-500/5">
         <CardHeader className="pb-2">
           <CardTitle className="flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-400">

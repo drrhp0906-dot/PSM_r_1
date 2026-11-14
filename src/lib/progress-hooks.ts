@@ -23,11 +23,8 @@ export interface ProgressData {
 }
 
 export interface ProgressStats {
-  /** latest result per mcq: correct or wrong */
   lastByMcq: Record<string, boolean>
-  /** has the student attempted this mcq before (ever) */
   attemptedByMcq: Record<string, true>
-  /** saqId -> revised state */
   saqRevised: Record<string, boolean>
   totalAttempts: number
   uniqueAttempted: number
